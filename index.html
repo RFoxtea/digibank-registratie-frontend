@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <title>Uitleningsformulier Digibankatelier Mechelen</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <h1>Uitleningsformulier Digibankatelier Mechelen</h1>
+  <main>
+  <form action="#" autocomplete="off">
+    <fieldset id="">
+			<legend>Type contract</legend>
+			<div class="radio-option-list">
+				<div class="radio-option">
+					<label for="keuze-niet-betalend">Niet-betalend contract</label>
+					<input id="keuze-niet-betalend" type="radio" name="type-contract" value="niet-betalend">
+				</div>
+				<div class="radio-option">
+					<label for="keuze-betalend">Betalend contract</label>
+					<input id="keuze-betalend" type="radio" name="type-contract" value="betalend">
+				</div>
+			</div>
+		</fieldset>
+    <fieldset class="non-paying-only" style="display: none;">
+			<legend>UiTpas</legend>
+			<div class="field-box non-paying-only">
+				<label for="uitpas-nummer">UiTpas-nummer</label>
+				<input id="uitpas-nummer" type="text" name="uitpas-nummer" minlength="13" maxlength="13">
+			</div>
+			<div class="checkbox-box non-paying-only">
+				<label for="aangetekende-brief">Ik heb geen UiTpas, maar wel een aangetekende brief van het OCMW dat ik een apparaat vereis.</label>
+				<input id="aangetekende-brief" type="checkbox" name="aangetekende-brief">
+			</div>
+		</fieldset>
+    <fieldset style="display: none;">
+			<legend>Persoonsgegevens</legend>
+			<div class="field-box">
+				<label for="voornaam">Voornaam</label>
+				<input id="voornaam" type="text" name="voornaam" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="achternaam">Achternaam</label>
+				<input id="achternaam" type="text" name="achternaam" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="geboortedatum">Geboortedatum</label>
+				<input id="geboortedatum" type="date" name="geboortedatum" maxlength="40">
+			</div>
+		</fieldset>
+		<fieldset style="display: none;">
+			<legend>Adres</legend>
+			<div class="fieldsubset">
+			<div class="field-box" style="flex-grow: 2;">
+				<label for="straatnaam">Straatnaam</label>
+				<input id="straatnaam" type="text" name="straatnaam" maxlength="40">
+			</div>
+			<div class="number-and-bus">
+			<div class="field-box small">
+				<label for="huisnummer">Huisnummer</label>
+				<input id="huisnummer" type="text" name="huisnummer" maxlength="10">
+			</div>
+			<div class="field-box small">
+				<label for="bus">Bus</label>
+				<input id="bus" type="text" name="bus" maxlength="10">
+			</div>
+			</div>
+			</div>
+			<div class="fieldsubset">
+			<div class="field-box">
+				<label for="gemeente">Gemeente</label>
+				<input id="gemeente" type="text" name="gemeente" maxlength="40">
+			</div>
+			<div class="field-box small">
+				<label for="postcode">Postcode</label>
+				<input id="postcode" type="text" name="" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="land">Land</label>
+				<input id="land" type="text" name="land" value="België" maxlength="40">
+			</div>
+			</div>
+		</fieldset>
+    <fieldset style="display: none;">
+			<legend>Contactgegevens</legend>
+			<div class="field-box">
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="telefoon">Telefoonnummer</label>
+				<input id="telefoon" type="tel" name="telefoon" maxlength="40">
+			</div>
+		</fieldset>
+		<div class="info-notice" style="display: none;">Een medewerker van het Digibankatelier zal de rest van het formulier invullen.</div>
+    <fieldset style="display: none;">
+			<legend>Contractgegevens</legend>
+			<div class="fieldsubset">
+			<div class="field-box">
+				<label for="datum-tekening">Datum tekening</label>
+				<input type="button" id="" value="⚙">
+				<input id="datum-tekening" type="date" name="datum-tekening" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="datum-ingang">Datum ingang</label>
+				<input type="button" id="" value="⚙">
+				<input id="datum-ingang" type="date" name="datum-ingang" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="contractnummer">Contractnummer</label>
+				<input type="button" id="" value="⚙">
+				<input id="contractnummer" type="text" name="contractnummer" maxlength="40">
+			</div>
+			</div>
+		</fieldset>
+    <fieldset style="display: none;">
+			<legend>Apparaat</legend>
+			<div class="field-box">
+				<label for="assettag">Assettag</label>
+				<input id="assettag" type="text" name="assettag" maxlength="40">
+			</div>
+			<div class="fieldsubset">
+			<div class="field-box">
+				<label for="merk">Merk</label>
+				<input type="button" id="" value="⚙">
+				<input id="merk" type="text" name="merk" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="model">Model</label>
+				<input type="button" id="" value="⚙">
+				<input id="model" type="text" name="model" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="laptop-type">Type</label>
+				<input type="button" id="" value="⚙">
+				<input id="laptop-type" type="text" name="laptop-type" maxlength="40">
+			</div>
+			</div>
+			<div class="fieldsubset">
+			<div class="checkbox-box">
+				<label for="lader">Inclusief lader</label>
+				<input id="lader" type="checkbox" name="lader" maxlength="40">
+			</div>
+			<div class="checkbox-box non-paying-only">
+				<label for="muis">Inclusief muis</label>
+				<input id="muis" type="checkbox" name="muis" maxlength="40">
+			</div>
+			<div class="checkbox-box non-paying-only">
+				<label for="eid-lezer">Inclusief eID lezer</label>
+				<input id="eid-lezer" type="checkbox" name="eid-lezer" maxlength="40">
+			</div>
+			</div>
+			<div class="fieldsubset">
+			<div class="field-box">
+				<label for="datum-uit">Datum uit</label>
+				<input type="button" id="auto-datum-uit" value="⚙">
+				<input id="datum-uit" type="date" name="datum-uit" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="datum-nazicht">Datum nazicht</label>
+				<input type="button" id="auto-datum-nazicht" value="⚙">
+				<input id="datum-nazicht" type="date" name="datum-nazicht" maxlength="40">
+			</div>
+			<div class="field-box">
+				<label for="datum-in">Datum in</label>
+				<input type="button" id="auto-datum-in" value="⚙">
+				<input id="datum-in" type="date" name="datum-in" maxlength="40">
+			</div>
+			</div>
+		</fieldset>
+    <fieldset style="display: none;" class="paying-only">
+			<legend>Betaalgegevens</legend>
+			<div class="fieldsubset">
+			<div class="radio-option-list paying-only">
+				<div class="radio-option">
+					<label for="keuze-maandelijks">Maandelijkse betaling</label>
+					<input id="keuze-maandelijks" type="radio" name="betalingsperiode">
+				</div>
+				<div class="radio-option">
+					<label for="keuze-jaarlijks">Jaarlijkse betaling</label>
+					<input id="keuze-jaarlijks" type="radio" name="betalingsperiode">
+				</div>
+			</div>
+			</div>
+			<div class="field-box paying-only">
+				<label for="gestructureerde-mededeling">Gestructureerde mededeling</label>
+				<input type="button" id="auto-gestructureerde-mededeling" value="⚙">
+				<input id="gestructureerde-mededeling" type="text" name="gestructureerde-mededeling" placeholder="+++__/____/_____+++" data-slots="_" maxlength="40">
+			</div>
+		</fieldset>
+		<input id="submit" type="submit" value="Submit" style="display: none;">
+  </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
